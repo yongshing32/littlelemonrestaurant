@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+  <h1>Menu Item Details</h1>
+  <div>
+    <h2>{{ menu_item.name }}</h2>
+    <p>
+      Price: ${{ menu_item.price }}.00
+      <img src="/static/img/menu_items/{{ menu_item.name }}.jpg" alt="{{ menu_item.name }}">
+    </p>
+    <p>{{ menu_item.menu_item_description }}</p>
+  </div>
+{% endblock %}
